@@ -1,1 +1,3 @@
-# Estudo--ython
+# Estudo-Python
+
+Projeto de Estudo com resoluções de Exercicios
