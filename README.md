@@ -1,3 +1,3 @@
 # Estudo-Python
 
-Projeto de Estudo com resoluções de Exercicios
+Projeto de Estudo da linguagem Python, com resoluções de Exercicios
