@@ -7,3 +7,12 @@ Sendo que da quantia total:
 Calcule e imprima a quantia ganha por cada um dos ganhadores.
 """
 
+valor_premio = 780000
+
+ganhador_A = valor_premio * 0.46
+ganhador_B = valor_premio * 0.32
+ganhador_C = valor_premio - ( ganhador_A + ganhador_B)
+
+print("O primeiro ganhador receberá R${:.2f} \n"
+  "O segundo ganhador receberá R${:.2f} \n"
+  "O terceiro ganhador receberá R${:.2f}".format(ganhador_A, ganhador_B, ganhador_C))
