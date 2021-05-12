@@ -4,3 +4,10 @@ o numero de dias trabalhados pelo encanador e imprima a quantia liquida que deve
 paga, sabendo-se que são descontados 8% para imposto de renda.
 """
 
+vlr_diaria = 30
+
+dias_trabalhados = int(input("Informe a quantidade de dias trabalhados:"))
+valor_bruto = dias_trabalhados * vlr_diaria
+valor_liquido = valor_bruto - (valor_bruto * 0.08)
+
+print("O valor liquido que o encanador deve receber e de R${:.2f}".format(valor_liquido))
