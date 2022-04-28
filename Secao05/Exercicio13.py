@@ -10,4 +10,7 @@ p3 = float(input("Informe a nota da terceira prova:"))
 
 media = (p1 + p2 + (p3 * 2)) / 4
 
-if media >=
+if media >= 60:
+    print("Aluno Aprovado! Media Final {:.2f}.".format(media))
+else:
+    print("Aluno Reprovado! Media Final {:.2f}.".format(media))
