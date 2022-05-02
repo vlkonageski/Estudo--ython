@@ -14,3 +14,16 @@ A variavel A tem que ser diferente de zero. Caso seja igual, imprima a mensagem 
  ºSe delta >= 0, imprima as duas raizes reais.
 """
 
+a = int(input("Informe o valor de A:"))
+b = int(input("Informe o valor de B:"))
+c = int(input("Informe o valor de C:"))
+delta = (b * b) - (4 * a * c)
+
+if delta < 0:
+    print("Não existe raiz!")
+elif delta == 0:
+    print("Raiz unica!")
+else:
+    x1 = (-b + delta) / (2 * a)
+    x2 = (-b - delta) / (2 * a)
+    print(" x¹= {:.2f} e x² = {:.2f}".format(x1, x2))
