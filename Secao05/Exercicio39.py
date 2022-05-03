@@ -11,3 +11,14 @@ LEia o custo de fábrica e escreva o custo ao consumidor.
           |---------------------------------------------------------------|
 """
 
+custoFabrica = float(input("Informe o custo de fabrica do veiculo:"))
+
+if custoFabrica <= 12000:
+    valorFinal = custoFabrica + (custoFabrica * 0.05)
+    print("Valor final do Veiculo é R${:.2f}".format(valorFinal))
+elif custoFabrica > 12000 and custoFabrica <= 25000:
+    valorFinal = custoFabrica + (custoFabrica * 0.10) + (custoFabrica * 0.15)
+    print("Valor final do Veiculo é R${:.2f}".format(valorFinal))
+else:
+    valorFinal = custoFabrica + (custoFabrica * 0.15) + (custoFabrica * 0.20)
+    print("Valor final do Veiculo é R${:.2f}".format(valorFinal))

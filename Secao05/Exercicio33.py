@@ -18,3 +18,35 @@ o preço novo, e escreva uma mensagem em função do preço novo ( de acordo com
           |-----------------------------------|
 """
 
+precoAntigo = float(input("Informe o preço antigo do produto:"))
+
+if precoAntigo <= 50:
+    precoNovo = precoAntigo + (precoAntigo * 0.05)
+    if precoNovo <= 80:
+        print("Preço Novo R${:.2f}. Barato!".format(precoNovo))
+    elif precoNovo > 80 and precoNovo <= 120:
+        print("Preço Novo R${:.2f}. Normal!".format(precoNovo))
+    elif precoNovo > 120 and precoNovo <= 200:
+        print("Preço Novo R${:.2f}. Caro!".format(precoNovo))
+    else:
+        print("Preço Novo R${:.2f}. Muito Caro!".format(precoNovo))
+elif precoAntigo > 50 and precoAntigo <= 100:
+    precoNovo = precoAntigo + (precoAntigo * 0.10)
+    if precoNovo <= 80:
+        print("Preço Novo R${:.2f}. Barato!".format(precoNovo))
+    elif precoNovo > 80 and precoNovo <= 120:
+        print("Preço Novo R${:.2f}. Normal!".format(precoNovo))
+    elif precoNovo > 120 and precoNovo <= 200:
+        print("Preço Novo R${:.2f}. Caro!".format(precoNovo))
+    else:
+        print("Preço Novo R${:.2f}. Muito Caro!".format(precoNovo))
+else:
+    precoNovo = precoAntigo + (precoAntigo * 0.15)
+    if precoNovo <= 80:
+        print("Preço Novo R${:.2f}. Barato!".format(precoNovo))
+    elif precoNovo > 80 and precoNovo <= 120:
+        print("Preço Novo R${:.2f}. Normal!".format(precoNovo))
+    elif precoNovo > 120 and precoNovo <= 200:
+        print("Preço Novo R${:.2f}. Caro!".format(precoNovo))
+    else:
+        print("Preço Novo R${:.2f}. Muito Caro!".format(precoNovo))

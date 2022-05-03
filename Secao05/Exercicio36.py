@@ -13,3 +13,23 @@ Para calcular a comissao, considere a tabela abaixo:
           |-------------------------------------------------------------------------------|
 """
 
+vlrVenda = float(input("Informe o valor das vendas:"))
+
+if vlrVenda >= 100000:
+    comissao = 700 + (vlrVenda * 0.16)
+    print("A comissao a ser paga e de R${:.2f}".format(comissao))
+elif vlrVenda > 100000 and vlrVenda >= 80000:
+    comissao = 650 + (vlrVenda * 0.14)
+    print("A comissao a ser paga e de R${:.2f}".format(comissao))
+elif vlrVenda > 80000 and vlrVenda >= 60000:
+    comissao = 600 + (vlrVenda * 0.14)
+    print("A comissao a ser paga e de R${:.2f}".format(comissao))
+elif vlrVenda > 60000 and vlrVenda >= 40000:
+    comissao = 550 + (vlrVenda * 0.14)
+    print("A comissao a ser paga e de R${:.2f}".format(comissao))
+elif vlrVenda > 40000 and vlrVenda >= 20000:
+    comissao = 500 + (vlrVenda * 0.14)
+    print("A comissao a ser paga e de R${:.2f}".format(comissao))
+else:
+    comissao = 400 + (vlrVenda * 0.14)
+    print("A comissao a ser paga e de R${:.2f}".format(comissao))

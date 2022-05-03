@@ -12,3 +12,19 @@ Faça um algoritmo que calcule o IMC de uma pessoa e mostre sua classificação 
           |-------------------------------|
 """
 
+peso = float(input("Informe seu peso:"))
+altura = float(input("Informe sua altura:"))
+imc = peso / (altura * altura)
+
+if imc <= 18.5:
+    print("Abaixo do peso!")
+elif imc > 18.5 and imc < 25:
+    print("Saudavel!")
+elif imc >= 25 and imc < 30:
+    print("Peso em excesso!")
+elif imc >= 30 and imc < 35:
+    print("Obesidade Grau I!")
+elif imc >= 35 and imc < 40:
+    print("Obesidade Grau II!")
+else:
+    print("Obesidade Grau III!")

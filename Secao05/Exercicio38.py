@@ -18,3 +18,85 @@ reajustado, ou uma mensagem caso o funcionário nao tenha direito a nenhum aumen
           |-----------------------------------------------------------|
 """
 
+salarioAtual = float(input("Informe o salario atual do funcionario:"))
+tempoServico = int(input("Informe a quantos anos trabalha na empresa:"))
+
+if salarioAtual <= 500:
+    if tempoServico < 1:
+        reajuste = salarioAtual + (salarioAtual * 0.25)
+        print("O novo salario é R${:.2f}".format(reajuste))
+    elif tempoServico >= 1 and tempoServico <= 3:
+        reajuste = salarioAtual + (salarioAtual * 0.25) + 100
+        print("O novo salario é R${:.2f}".format(reajuste))
+    elif tempoServico >= 4 and tempoServico <= 6:
+        reajuste = salarioAtual + (salarioAtual * 0.25) + 200
+        print("O novo salario é R${:.2f}".format(reajuste))
+    elif tempoServico >= 7 and tempoServico <= 10:
+        reajuste = salarioAtual + (salarioAtual * 0.25) + 300
+        print("O novo salario é R${:.2f}".format(reajuste))
+    else:
+        reajuste = salarioAtual + (salarioAtual * 0.25) + 500
+        print("O novo salario é R${:.2f}".format(reajuste))
+elif salarioAtual > 500 and salarioAtual <= 1000:
+    if tempoServico < 1:
+        reajuste = salarioAtual + (salarioAtual * 0.20)
+        print("O novo salario é R${:.2f}".format(reajuste))
+    elif tempoServico >= 1 and tempoServico <= 3:
+        reajuste = salarioAtual + (salarioAtual * 0.20) + 100
+        print("O novo salario é R${:.2f}".format(reajuste))
+    elif tempoServico >= 4 and tempoServico <= 6:
+        reajuste = salarioAtual + (salarioAtual * 0.20) + 200
+        print("O novo salario é R${:.2f}".format(reajuste))
+    elif tempoServico >= 7 and tempoServico <= 10:
+        reajuste = salarioAtual + (salarioAtual * 0.20) + 300
+        print("O novo salario é R${:.2f}".format(reajuste))
+    else:
+        reajuste = salarioAtual + (salarioAtual * 0.20) + 500
+        print("O novo salario é R${:.2f}".format(reajuste))
+elif salarioAtual > 1000 and salarioAtual <= 1500:
+    if tempoServico < 1:
+        reajuste = salarioAtual + (salarioAtual * 0.15)
+        print("O novo salario é R${:.2f}".format(reajuste))
+    elif tempoServico >= 1 and tempoServico <= 3:
+        reajuste = salarioAtual + (salarioAtual * 0.15) + 100
+        print("O novo salario é R${:.2f}".format(reajuste))
+    elif tempoServico >= 4 and tempoServico <= 6:
+        reajuste = salarioAtual + (salarioAtual * 0.15) + 200
+        print("O novo salario é R${:.2f}".format(reajuste))
+    elif tempoServico >= 7 and tempoServico <= 10:
+        reajuste = salarioAtual + (salarioAtual * 0.15) + 300
+        print("O novo salario é R${:.2f}".format(reajuste))
+    else:
+        reajuste = salarioAtual + (salarioAtual * 0.15) + 500
+        print("O novo salario é R${:.2f}".format(reajuste))
+elif salarioAtual > 1500 and salarioAtual <= 2000:
+    if tempoServico < 1:
+        reajuste = salarioAtual + (salarioAtual * 0.10)
+        print("O novo salario é R${:.2f}".format(reajuste))
+    elif tempoServico >= 1 and tempoServico <= 3:
+        reajuste = salarioAtual + (salarioAtual * 0.10) + 100
+        print("O novo salario é R${:.2f}".format(reajuste))
+    elif tempoServico >= 4 and tempoServico <= 6:
+        reajuste = salarioAtual + (salarioAtual * 0.10) + 200
+        print("O novo salario é R${:.2f}".format(reajuste))
+    elif tempoServico >= 7 and tempoServico <= 10:
+        reajuste = salarioAtual + (salarioAtual * 0.10) + 300
+        print("O novo salario é R${:.2f}".format(reajuste))
+    else:
+        reajuste = salarioAtual + (salarioAtual * 0.10) + 500
+        print("O novo salario é R${:.2f}".format(reajuste))
+else:
+    if tempoServico < 1:
+        print("Sem Reajuste")
+    elif tempoServico >= 1 and tempoServico <= 3:
+        reajuste = salarioAtual + 100
+        print("O novo salario é R${:.2f}".format(reajuste))
+    elif tempoServico >= 4 and tempoServico <= 6:
+        reajuste = salarioAtual + 200
+        print("O novo salario é R${:.2f}".format(reajuste))
+    elif tempoServico >= 7 and tempoServico <= 10:
+        reajuste = salarioAtual + 300
+        print("O novo salario é R${:.2f}".format(reajuste))
+    else:
+        reajuste = salarioAtual + 500
+        print("O novo salario é R${:.2f}".format(reajuste))

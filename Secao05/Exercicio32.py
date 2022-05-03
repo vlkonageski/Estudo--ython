@@ -15,3 +15,29 @@ execução somente será calculado um pedido. O cardapio da lanchonete segue o p
           |-------------------------------------|
 """
 
+codigo = int(input("Informe o codigo do produto:"))
+quantidade = int(input("Informe a quantidade:"))
+
+if codigo == 100:
+    valor = quantidade * 1.20
+    print("O pedido foi de {:d} Cachorro quente. Valor R${:.2f}".format(quantidade, valor))
+elif codigo == 101:
+    valor = quantidade * 1.30
+    print("O pedido foi de {:d} Bauru Simples. Valor R${:.2f}".format(quantidade, valor))
+elif codigo == 102:
+    valor = quantidade * 1.50
+    print("O pedido foi de {:d} Bauru com ovo. Valor R${:.2f}".format(quantidade, valor))
+elif codigo == 103:
+    valor = quantidade * 1.20
+    print("O pedido foi de {:d} Hamburguer. Valor R${:.2f}".format(quantidade, valor))
+elif codigo == 104:
+    valor = quantidade * 1.70
+    print("O pedido foi de {:d} Cheeseburguer. Valor R${:.2f}".format(quantidade, valor))
+elif codigo == 105:
+    valor = quantidade * 2.20
+    print("O pedido foi de {:d} Suco. Valor R${:.2f}".format(quantidade, valor))
+elif codigo == 106:
+    valor = quantidade * 1.00
+    print("O pedido foi de {:d} Refrigerante. Valor R${:.2f}".format(quantidade, valor))
+else:
+    print("Codigo Invalido!")
